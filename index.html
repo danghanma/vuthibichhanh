@@ -63,6 +63,9 @@
             bottom: 0;
             width: 100%;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            white-space: nowrap;  /* Giúp chữ không bị xuống dòng */
+            overflow: hidden;     /* Ẩn phần chữ thừa nếu không vừa màn hình */
+            text-overflow: ellipsis; /* Hiển thị dấu ba chấm khi bị cắt */
         }
 
         /* Điều chỉnh trên màn hình nhỏ */
@@ -81,6 +84,7 @@
 
             header, footer {
                 font-size: 1.5rem;
+                padding: 10px;
             }
         }
     </style>
@@ -88,18 +92,4 @@
 <body>
     <!-- Phần chữ trên -->
     <header>
-        Tôi yêu Vũ Thị Bích Hạnh 💖
-    </header>
-
-    <!-- Nội dung chính -->
-    <main>
-        <h2>Tôi nhớ em mỗi ngày Hạnh ạ 🥰</h2>
-        <img src="Hanh.jpg" alt="Hình ảnh Hạnh">
-    </main>
-
-    <!-- Phần chữ dưới -->
-    <footer>
-        Dương Hải Đăng 💕 Vũ Thị Bích Hạnh
-    </footer>
-</body>
-</html>
+        Tôi yêu V
