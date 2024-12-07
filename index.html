@@ -1,63 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dương Hải Đăng's Website</title>
+    <title>Trang web tình yêu</title>
     <style>
+        /* Nền hồng toàn trang */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe4e1;
+            text-align: center;
             padding: 0;
-            background-color: #ffe6e6; /* Soft pink for a romantic feel */
         }
+
+        /* Chữ ở phần trên */
         header {
-            background-color: #ff4d4d; /* Deep pink for a passionate touch */
+            background-color: #ff69b4;
             color: white;
             padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
         }
+
+        /* Bố cục chính với chữ và hình ảnh */
         main {
-            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
-        footer {
-            background-color: #ff4d4d; /* Matching footer color */
-            color: white;
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ff1493;
+            margin-bottom: 20px;
+        }
+
+        /* Hình ảnh */
+        img {
+            border: 5px solid pink;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(255, 182, 193, 0.8);
             padding: 10px;
+            background-color: #fffafa;
+            width: 200px;
+            height: auto;
+        }
+
+        /* Chữ ở phần dưới */
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            font-size: 1rem;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
+        }
+
+        /* Điều chỉnh bố cục trên điện thoại */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column; /* Xếp dọc chữ và hình ảnh */
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            img {
+                width: 150px; /* Thu nhỏ hình ảnh */
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Phần chữ trên -->
     <header>
-        <h1>Tôi yêu Vũ Thị Bích Hạnh</h1>
-
+        Tôi yêu Vũ Thị Bích Hạnh 💖
     </header>
- <main style="display: flex; align-items: center; gap: 20px;">
-    <!-- Phần chữ -->
-    <div>
+
+    <!-- Phần nội dung chính -->
+    <main>
+        <!-- Chữ ở giữa -->
         <h2>Tôi nhớ em mỗi ngày Hạnh ạ 🥰</h2>
-    </div>
+        <!-- Hình ảnh -->
+        <img src="Hanh.jpg" alt="Hình ảnh Hạnh">
+    </main>
 
-    <!-- Phần hình ảnh -->
-    <div>
-        <img src="Hanh.jpg" alt="Hình ảnh Hạnh" 
-             style="border: 5px solid pink; 
-                    border-radius: 20px; 
-                    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.8); 
-                    padding: 10px; 
-                    background-color: #fffafa; 
-                    width: 200px; height: auto;">
-    </div>
-</main>
-
-
+    <!-- Phần chữ dưới -->
     <footer>
-    <p>Dương Hải Đăng 💕 Vũ Thị Bích Hạnh</p>
-</footer>
-
+        Dương Hải Đăng 💕 Vũ Thị Bích Hạnh
+    </footer>
 </body>
 </html>
