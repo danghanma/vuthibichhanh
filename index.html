@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang web tình yêu</title>
     <style>
-        /* Nền gradient với họa tiết pattern */
+        /* Nền gradient kết hợp với họa tiết nghệ thuật */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             color: #333;
-            background: linear-gradient(135deg, #ffafbd, #ffc3a0), url('https://www.transparenttextures.com/patterns/heart-pattern.png');
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0), url('https://www.transparenttextures.com/patterns/diamond-tile.png');
             background-attachment: fixed;
-            background-size: cover, auto;
+            background-size: 100% 100%, auto;
+            background-position: center;
             text-align: center;
         }
 
@@ -87,9 +88,39 @@
                 padding: 10px;
             }
         }
+
+        /* Họa tiết bokeh nhẹ nhàng */
+        .bokeh-effect {
+            background: url('https://www.transparenttextures.com/patterns/flower-power.png') repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            pointer-events: none; /* Không ảnh hưởng đến các phần tử khác */
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
     <!-- Phần chữ trên -->
     <header>
-        Tôi yêu V
+        Tôi yêu Vũ Thị Bích Hạnh 💖
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+        <h2>Tôi nhớ em mỗi ngày Hạnh ạ 🥰</h2>
+        <img src="Hanh.jpg" alt="Hình ảnh Hạnh">
+    </main>
+
+    <!-- Phần chữ dưới -->
+    <footer>
+        Dương Hải Đăng 💕 Vũ Thị Bích Hạnh
+    </footer>
+
+    <!-- Họa tiết bokeh nhẹ nhàng -->
+    <div class="bokeh-effect"></div>
+</body>
+</html>
