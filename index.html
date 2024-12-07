@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang web tình yêu</title>
     <style>
-        /* Nền gradient với họa tiết */
+        /* Nền gradient với họa tiết pattern */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             color: #333;
-            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0), url('https://www.transparenttextures.com/patterns/heart-pattern.png');
             background-attachment: fixed;
-            background-size: cover;
+            background-size: cover, auto;
             text-align: center;
         }
 
@@ -32,6 +32,8 @@
             flex-direction: column;
             align-items: center;
             padding: 30px 10px;
+            position: relative;
+            z-index: 1; /* Đảm bảo nội dung luôn trên nền họa tiết */
         }
 
         h2 {
@@ -61,19 +63,6 @@
             bottom: 0;
             width: 100%;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Thêm họa tiết trái tim */
-        body::after {
-            content: "❤️";
-            font-size: 200px;
-            color: rgba(255, 182, 193, 0.3);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 0;
-            pointer-events: none;
         }
 
         /* Điều chỉnh trên màn hình nhỏ */
