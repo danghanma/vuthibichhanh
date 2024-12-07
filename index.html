@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tôi tạo riêng cho em</title>
+    <title>Trang web tình yêu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* Nền với hình ảnh mới mà bạn cung cấp */
+        /* Nền với ảnh mờ và lớp overlay */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Quicksand', sans-serif;
             color: #333;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Lớp overlay mờ */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Làm nền mờ */
+            z-index: -1;
+        }
+
+        /* Nền với hình ảnh mới mà bạn cung cấp */
+        .background {
             background: url('https://png.pngtree.com/thumb_back/fw800/background/20240810/pngtree-cute-couple-with-flowers-blurry-love-background-happy-valentines-day-image_16152725.jpg') no-repeat center center fixed;
             background-size: cover;
-            text-align: center;
+            height: 100vh;
         }
 
         /* Phần chữ trên cùng */
         header {
-            background-color: rgba(255, 105, 180, 0.8);
+            background-color: rgba(255, 105, 180, 0.7);
             color: white;
             padding: 20px;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+            font-family: 'Great Vibes', cursive;
         }
 
         /* Bố cục chính */
@@ -36,10 +56,10 @@
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: #ff1493;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
         }
 
         img {
@@ -54,18 +74,19 @@
 
         /* Phần chữ dưới cùng */
         footer {
-            background-color: rgba(255, 105, 180, 0.8);
+            background-color: rgba(255, 105, 180, 0.7);
             color: white;
             padding: 20px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             position: fixed;
             bottom: 0;
             width: 100%;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            white-space: nowrap;  /* Giúp chữ không bị xuống dòng */
-            overflow: visible;     /* Cho phép hiển thị đầy đủ chữ */
-            text-overflow: ellipsis; /* Hiển thị dấu ba chấm khi chữ dài */
-            word-wrap: break-word; /* Đảm bảo chữ không bị tràn hoặc xuống dòng khi không đủ không gian */
+            white-space: nowrap;
+            overflow: visible;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            font-family: 'Quicksand', sans-serif;
         }
 
         /* Điều chỉnh trên màn hình nhỏ */
@@ -90,20 +111,22 @@
     </style>
 </head>
 <body>
-    <!-- Phần chữ trên -->
-    <header>
-        Tôi yêu Vũ Thị Bích Hạnh 💖
-    </header>
+    <div class="background">
+        <!-- Phần chữ trên -->
+        <header>
+            Tôi yêu Vũ Thị Bích Hạnh 💖
+        </header>
 
-    <!-- Nội dung chính -->
-    <main>
-        <h2>Tôi nhớ em mỗi ngày Hạnh ạ 🥰</h2>
-        <img src="Hanh.jpg" alt="Hình ảnh Hạnh">
-    </main>
+        <!-- Nội dung chính -->
+        <main>
+            <h2>Tôi nhớ em mỗi ngày Hạnh ạ 🥰</h2>
+            <img src="Hanh.jpg" alt="Hình ảnh Hạnh">
+        </main>
 
-    <!-- Phần chữ dưới -->
-    <footer>
-        Dương Hải Đăng 💕 Vũ Thị Bích Hạnh
-    </footer>
+        <!-- Phần chữ dưới -->
+        <footer>
+            Dương Hải Đăng 💕 Vũ Thị Bích Hạnh
+        </footer>
+    </div>
 </body>
 </html>
