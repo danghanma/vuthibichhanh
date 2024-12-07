@@ -65,8 +65,9 @@
             width: 100%;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
             white-space: nowrap;  /* Giúp chữ không bị xuống dòng */
-            overflow: hidden;     /* Ẩn phần chữ thừa nếu không vừa màn hình */
-            text-overflow: ellipsis; /* Hiển thị dấu ba chấm khi bị cắt */
+            overflow: visible;     /* Cho phép hiển thị đầy đủ chữ */
+            text-overflow: ellipsis; /* Giúp hiển thị dấu ba chấm khi chữ dài */
+            word-wrap: break-word; /* Đảm bảo chữ không bị tràn hoặc xuống dòng khi không đủ không gian */
         }
 
         /* Điều chỉnh trên màn hình nhỏ */
