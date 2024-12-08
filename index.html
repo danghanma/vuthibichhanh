@@ -31,7 +31,7 @@
             position: relative;
             z-index: 2;
             font-family: 'Great Vibes', cursive;
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: #fff;
             text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
             margin: 20px 0;
@@ -44,16 +44,16 @@
 
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem; /* Điều chỉnh nhỏ hơn một chút */
+            font-size: 2rem; /* Điều chỉnh chữ vừa hơn */
             color: #fff;
-            margin: 30px 0;
+            margin: 20px 0;
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 1);
             padding: 10px;
         }
 
         h2::before, h2::after {
             content: '“';
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-right: 5px;
             color: #ffeb3b; /* Màu vàng */
         }
@@ -67,7 +67,7 @@
             border: 5px solid #ffa07a; /* Khung ảnh mới hài hòa với nền */
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Bóng nhẹ cho ảnh */
-            width: 260px;
+            width: 70%;  /* Giảm kích thước ảnh để phù hợp với màn hình */
             height: auto;
             margin: 20px 0;
         }
@@ -75,7 +75,7 @@
         footer {
             position: relative;
             z-index: 2;
-            font-size: 1.8rem;
+            font-size: 1.6rem; /* Giảm kích thước chữ dưới */
             color: #fff;
             background-color: rgba(0, 0, 0, 0.4);
             padding: 10px;
@@ -99,6 +99,25 @@
             height: 2px;
             margin: 10px auto 0;
             background: linear-gradient(to right, #ff6f61, #ffa000);
+        }
+
+        /* Media Queries for Mobile View */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2.5rem; /* Giảm kích thước chữ tiêu đề trên màn hình nhỏ */
+            }
+
+            h2 {
+                font-size: 1.8rem; /* Giảm kích thước chữ giữa */
+            }
+
+            footer {
+                font-size: 1.4rem; /* Giảm kích thước chữ cuối */
+            }
+
+            img {
+                width: 80%; /* Đảm bảo ảnh không quá to trên màn hình nhỏ */
+            }
         }
     </style>
 </head>
