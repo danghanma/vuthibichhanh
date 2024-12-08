@@ -5,58 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vũ Thị Bích Hạnh</title>
     <!-- Link phông chữ -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&family=Roboto+Serif:wght@300;400&display=swap" rel="stylesheet">
     <style>
         /* Nền mới */
         body {
             margin: 0;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto Serif', serif;
             text-align: center;
-            background: url('https://i.pinimg.com/736x/a4/e7/58/a4e75889481bbdca785ea91f3b5983f9.jpg') no-repeat center center fixed;
+            background: url('https://i.pinimg.com/736x/78/b5/56/78b556480599cfaca7d5aa4b64c6c798.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
         }
 
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* Lớp phủ để tăng độ nổi bật của chữ */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
         header {
+            position: relative;
+            z-index: 2;
             font-family: 'Great Vibes', cursive;
             font-size: 3rem;
-            font-weight: bold;
             color: #fff;
             text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
             margin: 20px 0;
         }
 
+        main {
+            position: relative;
+            z-index: 2;
+        }
+
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
+            font-size: 2.2rem; /* Điều chỉnh nhỏ hơn một chút */
             color: #fff;
             margin: 30px 0;
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 1);
+            padding: 10px;
+        }
+
+        h2::before, h2::after {
+            content: '“';
+            font-size: 2.5rem;
+            margin-right: 5px;
+            color: #ffeb3b; /* Màu vàng */
+        }
+
+        h2::after {
+            content: '”';
+            margin-left: 5px;
         }
 
         img {
-            border: 5px solid #ffa07a;
+            border: 5px solid #ffa07a; /* Khung ảnh mới hài hòa với nền */
             border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-            width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Bóng nhẹ cho ảnh */
+            width: 260px;
             height: auto;
             margin: 20px 0;
         }
 
         footer {
-            font-size: 1.5rem;
-            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            font-size: 1.8rem;
             color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px;
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 0 0 12px rgba(255, 255, 255, 0.9);
             font-family: 'Great Vibes', cursive;
-            margin-bottom: 20px;
+        }
+
+        footer::before {
+            content: '';
+            display: block;
+            width: 90%;
+            height: 2px;
+            margin: 0 auto 10px;
+            background: linear-gradient(to right, #ff6f61, #ffa000);
+        }
+
+        footer::after {
+            content: '';
+            display: block;
+            width: 90%;
+            height: 2px;
+            margin: 10px auto 0;
+            background: linear-gradient(to right, #ff6f61, #ffa000);
         }
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <!-- Tiêu đề -->
     <header>
-        Tôi yêu Vũ Thị Bích Hạnh
+        Tôi yêu Vũ Thị Bích Hạnh 💖
     </header>
 
     <!-- Nội dung chính -->
@@ -67,7 +117,7 @@
 
     <!-- Dòng chữ dưới -->
     <footer>
-        Dương Hải Đăng 💕 Vũ Thị Bích Hạnh
+        <span>Dương Hải Đăng 💕 Vũ Thị Bích Hạnh</span>
     </footer>
 </body>
 </html>
