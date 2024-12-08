@@ -13,8 +13,10 @@
             font-family: 'Roboto Serif', serif;
             text-align: center;
             background: url('https://i.pinimg.com/736x/55/5d/49/555d49d2324d55a1bc263012256b9443.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-size: cover; /* Đảm bảo nền phủ toàn bộ */
+            background-attachment: fixed; /* Nền không bị cuộn */
             color: #fff;
+            min-height: 100vh; /* Đảm bảo chiều cao của body đủ để phủ kín màn hình */
         }
 
         .overlay {
